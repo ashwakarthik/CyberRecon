@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+
+*.backup
+*.bak
+*_backup.py
+main_before_*.py
+.env
