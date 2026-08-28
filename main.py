@@ -23,7 +23,7 @@ import importlib
 #
 # That makes imports such as:
 #
-#     cyberrecon.modules.tech_fingerprint
+#     modules.tech_fingerprint
 #
 # fail with:
 #
@@ -172,7 +172,7 @@ def port_scanner():
     print("[+] Starting port scan...\n")
 
     function = load_function(
-        "cyberrecon.modules.scanner",
+        "modules.scanner",
         [
             "run_port_scanner",
             "scan_ports",
@@ -226,7 +226,7 @@ def service_detection():
         return
 
     function = load_function(
-        "cyberrecon.modules.service_detection",
+        "modules.service_detection",
         [
             "run_service_detection",
             "detect_services",
@@ -248,7 +248,7 @@ def service_detection():
         # ----------------------------------------------------
 
         scanner_function = load_function(
-            "cyberrecon.modules.scanner",
+            "modules.scanner",
             [
                 "run_port_scanner",
                 "scan_ports",
@@ -370,7 +370,7 @@ def technology_fingerprinting():
     # --------------------------------------------------------
 
     scanner_function = load_function(
-        "cyberrecon.modules.scanner",
+        "modules.scanner",
         [
             "run_port_scanner",
             "scan_ports",
@@ -418,7 +418,7 @@ def technology_fingerprinting():
     # --------------------------------------------------------
 
     service_function = load_function(
-        "cyberrecon.modules.service_detection",
+        "modules.service_detection",
         [
             "run_service_detection",
             "detect_services",
@@ -456,7 +456,7 @@ def technology_fingerprinting():
     # --------------------------------------------------------
 
     fingerprint_function = load_function(
-        "cyberrecon.modules.fingerprint",
+        "modules.fingerprint",
         [
             "run_fingerprinting",
         ],
@@ -520,7 +520,7 @@ def http_recon():
         return
 
     function = load_function(
-        "cyberrecon.modules.http_recon",
+        "modules.http_recon",
         [
             "run_http_recon",
             "http_recon",
@@ -567,7 +567,7 @@ def dns_recon():
         return
 
     function = load_function(
-        "cyberrecon.modules.dns_recon",
+        "modules.dns_recon",
         [
             "run_dns_recon",
             "dns_recon",
@@ -614,7 +614,7 @@ def subdomain_enumeration():
         return
 
     function = load_function(
-        "cyberrecon.modules.subdomain_enum",
+        "modules.subdomain_enum",
         [
             "run_subdomain_enumeration",
             "enumerate_subdomains",
@@ -662,7 +662,7 @@ def endpoint_enumeration():
         return
 
     function = load_function(
-        "cyberrecon.modules.endpoint",
+        "modules.endpoint",
         [
             "run_endpoint_enumeration",
             "enumerate_endpoints",
@@ -723,7 +723,7 @@ def full_recon():
     print("-" * 60)
 
     scanner_function = load_function(
-        "cyberrecon.modules.scanner",
+        "modules.scanner",
         [
             "run_port_scanner",
             "scan_ports",
@@ -769,7 +769,7 @@ def full_recon():
     print("-" * 60)
 
     service_function = load_function(
-        "cyberrecon.modules.service_detection",
+        "modules.service_detection",
         [
             "run_service_detection",
             "detect_services",
@@ -816,7 +816,7 @@ def full_recon():
     print("-" * 60)
 
     fingerprint_function = load_function(
-        "cyberrecon.modules.tech_fingerprint",
+        "modules.tech_fingerprint",
         [
             "run_technology_fingerprinting",
             "run_tech_fingerprinting",
@@ -861,7 +861,7 @@ def full_recon():
     print("-" * 60)
 
     http_function = load_function(
-        "cyberrecon.modules.http_recon",
+        "modules.http_recon",
         [
             "run_http_recon",
             "http_recon",
@@ -901,7 +901,7 @@ def full_recon():
     print("-" * 60)
 
     dns_function = load_function(
-        "cyberrecon.modules.dns_recon",
+        "modules.dns_recon",
         [
             "run_dns_recon",
             "dns_recon",
@@ -941,7 +941,7 @@ def full_recon():
     print("-" * 60)
 
     subdomain_function = load_function(
-        "cyberrecon.modules.subdomain_enum",
+        "modules.subdomain_enum",
         [
             "run_subdomain_enumeration",
             "enumerate_subdomains",
@@ -987,7 +987,7 @@ def full_recon():
     print("-" * 60)
 
     endpoint_function = load_function(
-        "cyberrecon.modules.endpoint",
+        "modules.endpoint",
         [
             "run_endpoint_enumeration",
             "enumerate_endpoints",
@@ -1062,7 +1062,7 @@ def vulnerability_scanner():
         return
 
     function = load_function(
-        "cyberrecon.modules.vulnerability",
+        "modules.vulnerability",
         [
             "run_vulnerability_scan",
             "run_vuln_scanner",
@@ -1103,7 +1103,7 @@ def save_report():
     print("=" * 60)
 
     function = load_function(
-        "cyberrecon.modules.report",
+        "modules.report",
         [
             "save_report",
             "run_save_report",
