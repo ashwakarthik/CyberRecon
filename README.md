@@ -4,7 +4,7 @@
 
 ### `// RECONNAISSANCE • SECURITY RESEARCH • PYTHON`
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00FF9C&center=true&vCenter=true&width=650&lines=Mapping+the+Attack+Surface;Automating+Reconnaissance;Understanding+the+Digital+Landscape;Built+for+Authorized+Security+Research" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00FF9C&center=true&vCenter=true&width=650&lines=Mapping+the+Attack+Surface;Automating+Reconnaissance;Understanding+the+Digital+Landscape;Built+for+Authorized+Security+Research" alt="CyberRecon Typing Animation" />
 
 <br>
 
@@ -20,6 +20,7 @@
 [Overview](#-overview) •
 [Features](#-features) •
 [Technology Stack](#-technology-stack) •
+[Architecture](#-project-architecture) •
 [Installation](#-installation) •
 [Usage](#-usage) •
 [Roadmap](#-development-roadmap)
@@ -105,7 +106,7 @@ The goal is simple:
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,bash,git,github,vscode,linux" alt="Technology icons" />
+<img src="https://skillicons.dev/icons?i=python,bash,git,github,vscode,linux" alt="Python, Bash, Git, GitHub, VS Code, and Linux" />
 
 <br><br>
 
