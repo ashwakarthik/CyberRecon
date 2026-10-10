@@ -98,7 +98,7 @@ The goal is simple:
 </tr>
 </table>
 
-> **Note:** Feature availability and behavior depend on the current implementation. This project is under active development.
+> **Note:** Feature availability and behavior depend on the actual implementation. CyberRecon is under active development.
 
 ---
 
@@ -147,5 +147,298 @@ CyberRecon/
     ├── validator.py
     ├── vulnerability.py
     └── report.py
+```
 
-    ---
+The framework organizes reconnaissance functionality into separate modules, making the project easier to understand and extend.
+
+> The tree represents the documented structure. Keep it synchronized with the actual repository files.
+
+---
+
+## `05` // Installation
+
+### 📋 Requirements
+
+- Python 3
+- Git
+- Terminal access
+- Authorization to assess the target environment
+
+### Step 1 — Clone the repository
+
+```bash
+git clone https://github.com/ashwakarthik/CyberRecon.git
+cd CyberRecon
+```
+
+### Step 2 — Create a virtual environment
+
+**macOS / Linux**
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+**Windows PowerShell**
+
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+```
+
+### Step 3 — Install dependencies
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+On Windows, use `python -m pip` if `python3` is unavailable.
+
+### Step 4 — Launch CyberRecon
+
+```bash
+python3 main.py
+```
+
+> **Troubleshooting:** If installation fails, verify your Python version, activate the virtual environment, and check that `requirements.txt` exists and lists the required packages.
+
+---
+
+## `06` // Usage
+
+<div align="center">
+
+### 🖥️ CyberRecon CLI
+
+*Reconnaissance from a single interactive interface.*
+
+</div>
+
+Launch the framework:
+
+```bash
+python3 main.py
+```
+
+### ⚡ Interactive Interface
+
+The following is the documented menu layout. Actual options depend on the current implementation.
+
+```text
+==================================================
+                ASHWA CYBERRECON
+             Reconnaissance Framework
+==================================================
+
+  1. Port Scanner
+  2. Service Detection
+  3. Fingerprinting
+  4. HTTP Recon
+  5. DNS Recon
+  6. Subdomain Enumeration
+  7. Endpoint Enumeration
+  8. Full Recon
+  9. Vulnerability Scanner
+ 10. Save Report
+  0. Exit
+
+==================================================
+```
+
+### 🔍 Example Workflow
+
+1. Start the application.
+2. Select a supported reconnaissance module.
+3. Enter a target you own or have explicit authorization to assess.
+4. Review the results returned by the module.
+5. Save a report if reporting is implemented and available.
+
+### 💡 Command-Line Help
+
+If command-line argument handling is implemented, run:
+
+```bash
+python3 main.py --help
+```
+
+---
+
+## `07` // Development Roadmap
+
+The following checklist describes the project's documented development goals. Verify completed items against the actual implementation.
+
+### 🧱 Core Framework
+
+- [x] Modular project structure documented
+- [x] Interactive CLI documented
+- [x] TCP port scanning documented
+- [x] Service detection documented
+
+### 🔍 Reconnaissance Modules
+
+- [x] HTTP reconnaissance documented
+- [x] DNS reconnaissance documented
+- [x] Subdomain enumeration documented
+- [x] Endpoint enumeration documented
+- [x] Technology fingerprinting documented
+
+### 🛡️ Security Analysis
+
+- [x] Vulnerability-scanning module documented
+- [ ] Improve vulnerability checks
+- [ ] Introduce finding severity classification
+- [ ] Add finding metadata
+- [ ] Improve error handling
+
+### 📊 Reporting & Reliability
+
+- [x] Basic reporting documented
+- [ ] Structured JSON reports
+- [ ] HTML report generation
+- [ ] Centralized result management
+- [ ] Improved logging
+- [ ] Configuration management
+- [ ] Automated testing
+
+> Documentation alone does not establish that a feature is implemented or tested. Update the checklist as functionality is verified.
+
+---
+
+## `08` // Future Improvements
+
+The next stage of CyberRecon focuses on improving reliability, maintainability, and usability.
+
+<table>
+<tr>
+<th>Area</th>
+<th>Planned Improvements</th>
+</tr>
+<tr>
+<td>🏗️ Architecture</td>
+<td>Refine module organization and reduce duplicated responsibilities.</td>
+</tr>
+<tr>
+<td>🛡️ Security Analysis</td>
+<td>Improve vulnerability checks and introduce finding severity classification.</td>
+</tr>
+<tr>
+<td>📊 Reporting</td>
+<td>Implement structured JSON output and HTML report generation.</td>
+</tr>
+<tr>
+<td>⚙️ Reliability</td>
+<td>Improve exception handling, target validation, and error messages.</td>
+</tr>
+<tr>
+<td>🧪 Testing</td>
+<td>Add automated unit tests and integration tests.</td>
+</tr>
+<tr>
+<td>🖥️ Usability</td>
+<td>Improve command-line arguments and configuration management.</td>
+</tr>
+<tr>
+<td>📁 Data Management</td>
+<td>Introduce centralized result storage and reconnaissance session management.</td>
+</tr>
+<tr>
+<td>📚 Documentation</td>
+<td>Add verified examples, troubleshooting instructions, and module documentation.</td>
+</tr>
+</table>
+
+---
+
+## `09` // Responsible Use
+
+CyberRecon is intended for **authorized security assessments, cybersecurity education, and research**.
+
+Users must have explicit permission to assess target systems and must remain within the agreed testing scope.
+
+### 🔐 Responsible Testing Principles
+
+- ✅ Test only systems you own or have permission to assess.
+- ✅ Follow the agreed scope and applicable security policies.
+- ✅ Handle findings responsibly.
+- ❌ Do not scan unauthorized systems.
+- ❌ Do not disrupt services or compromise other users' data.
+- ❌ Do not use the framework for unlawful access or activity.
+
+> **Security knowledge comes with responsibility. Use it to understand, improve, and protect systems.**
+
+---
+
+## `10` // Contributing
+
+Contributions, suggestions, and improvements are welcome! 🤝
+
+### How to Contribute
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Implement your changes.
+4. Test changes in an authorized environment.
+5. Update the relevant documentation.
+6. Submit a pull request describing your changes.
+
+### Contribution Guidelines
+
+- Keep modules focused on specific responsibilities.
+- Follow consistent Python coding practices.
+- Write readable, maintainable code.
+- Document new functionality.
+- Avoid breaking existing modules.
+- Include tests when introducing new functionality.
+
+---
+
+## `11` // License
+
+**License: Not yet specified.**
+
+A suitable open-source license can be added when the project owner determines the terms under which the software may be used, modified, and redistributed.
+
+Until a license is added, do not assume that the repository grants permission to reuse or redistribute its code.
+
+---
+
+## `12` // Developer
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=00FF9C&center=true&vCenter=true&width=500&lines=ASHWA+KARTHIK;Cybersecurity+%7C+AI+%7C+Engineering;Building.+Learning.+Securing." alt="Developer introduction" />
+
+### `karthikashwa.exe`
+
+**Cybersecurity • Artificial Intelligence • Engineering**
+
+Exploring systems. Building practical tools. Learning through experimentation.
+
+<br>
+
+<a href="https://github.com/ashwakarthik">
+  <img src="https://img.shields.io/badge/GitHub-ashwakarthik-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile"/>
+</a>
+
+<a href="https://www.linkedin.com/in/karthik-ashwa-82bbab425/">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile"/>
+</a>
+
+<br><br>
+
+⭐ **If you find CyberRecon useful, consider starring the repository!**
+
+<br>
+
+`BUILD` • `RECON` • `ANALYZE` • `IMPROVE`
+
+</div>
+
+---
+
+<div align="center">
+
+<sub>ASHWA CYBERRECON • Built for authorized security research.</sub>
+
+</div>
